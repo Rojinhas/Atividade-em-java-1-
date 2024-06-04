@@ -1,0 +1,26 @@
+package atividade1;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class atividade1 {
+
+	public static void main(String[] args) {
+	
+		Locale.setDefault(Locale.US);
+		Scanner tcd = new Scanner (System.in);
+		
+		float salario, abono, novosalario;
+		 
+		System.out.println("Digite o seu salario:");
+		salario = tcd.nextFloat();
+		
+		System.out.println("Digite o seu abono:");
+		abono = tcd.nextFloat();
+		
+		novosalario = salario + abono;
+		System.out.printf("O seu novo salário será:%.2f", novosalario);
+		
+		tcd.close();
+	}
+}
